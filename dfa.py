@@ -22,19 +22,6 @@ class DFA:
             current_state = self.trans[current_state][symba]
         return current_state in self.accept_states
 
-#states = {'q00','q01','q10','q11'}
-#alfabet = {'0','1'}
-#trans = {
-#    'q00': {'0': 'q10', '1': 'q01'},
-#    'q01': {'0': 'q11', '1': 'q00'},
-#    'q10': {'0': 'q00', '1': 'q11'},
-#    'q11': {'0': 'q01', '1': 'q10'},
-#}
-#start_state = 'q00'
-#accept_states = {'q01'}
-
-#dfa = DFA(states, alfabet, trans, start_state, accept_states)
-#print(dfa.accepts('123000014231'))
 
 #regex -> tb sa contina cel putin o litera mare una mica , o cifra si un simbol (!@#$)
 
